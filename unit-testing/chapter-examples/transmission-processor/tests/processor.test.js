@@ -26,4 +26,9 @@ describe("transmission processor", function() {
     let result = processor("9701::<487297403495720912>");
     expect(result.rawData).not.toBeUndefined();
   });
+  test("returns -1 for rawData if missing < at position 0", function() {
+    let result = processor("9701::487297403495720912>");
+    expect(result.rawData).toBe(-1);
+  });
+  
 });
