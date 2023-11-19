@@ -9,10 +9,9 @@
         let windRating = document.querySelector("input[name=windRating]");
         let productionServers = document.querySelector("input[name=productionServers]");
         if (testName.value === "" || testDate.value === "" || rocketType === "" || numRocketBoosters === "" || windRating === "" || productionServers === "") {
-            alert("All fields are required!");
+            alert("All fields are required!");}
             // stop the form submission
             event.preventDefault();
         }
-        });
-    });
+    
 </script>
